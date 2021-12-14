@@ -53,7 +53,6 @@ const alienDestroyed = function () {
   aliensEl[aliensCounter - 1].remove(); //should desepear when it get hit not before
   aliensBlockMaxWidth -= 70;
   aliensBlockEl.style.maxWidth = `${aliensBlockMaxWidth}px`;
-  console.log("aliens-block max-width: " + aliensBlockMaxWidth);
   aliensCounter--;
 };
 
