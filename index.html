@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Space Ship Battle</title>
+  </head>
+  <body>
+    <div class="screen">
+      <header></header>
+      <main>
+        <div id="aliens-block">
+          <img
+            src="https://media.giphy.com/media/KY2ZMhnCxP008/giphy.gif"
+            class="giphy-embed"
+            width="70px"
+            alt=""
+          />
+
+          <img
+            src="https://media.giphy.com/media/KY2ZMhnCxP008/giphy.gif"
+            width="70"
+            alt=""
+          />
+
+          <img
+            src="https://media.giphy.com/media/KY2ZMhnCxP008/giphy.gif"
+            width="70"
+            alt=""
+          />
+
+          <img
+            src="https://media.giphy.com/media/KY2ZMhnCxP008/giphy.gif"
+            width="70"
+            alt=""
+          />
+
+          <img
+            src="https://media.giphy.com/media/KY2ZMhnCxP008/giphy.gif"
+            width="70"
+            alt=""
+          />
+
+          <img
+            src="https://media.giphy.com/media/KY2ZMhnCxP008/giphy.gif"
+            width="70px"
+            alt=""
+          />
+        </div>
+        <div class="bullet-track">
+          <div id="bullet" class="bullet-initial"></div>
+          <div id="abullet"></div>
+        </div>
+        <div class="hero-block">
+          <img src="images/x-wing3.png" height="100px" alt="" />
+        </div>
+      </main>
+
+      <footer>
+        <div id="dashRight">
+          <dl>
+            <dt>Name</dt>
+            <dd id="pName"></dd>
+          </dl>
+          <button id="attackBtn">Attack</button>
+          <button id="choiceBtn" type="button"></button>
+          <div id="choiceMenu">
+            <button id="leave">Retreat.</button>
+            <button id="stay">Continue. You may DIE</button>
+          </div>
+        </div>
+        <div>
+          <dl>
+            <dt>Hull</dt>
+            <dd id="pHull"></dd>
+          </dl>
+          <dl>
+            <dt>Fire Power</dt>
+            <dd id="pFPower"></dd>
+          </dl>
+          <dl>
+            <dt>Accuracy</dt>
+            <dd id="pAccuracy"></dd>
+          </dl>
+        </div>
+      </footer>
+      <div id="gameOver" class="old">
+        <p></p>
+        <p></p>
+      </div>
+      <div id="youWin">
+        <ul>
+          <li>Congratulations</li>
+          <li>You Saved The Galaxy</li>
+        </ul>
+      </div>
+    </div>
+    <script src="script/script.js"></script>
+  </body>
+</html>
