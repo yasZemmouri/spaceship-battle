@@ -11,7 +11,7 @@ class SpaceShip {
 }
 
 const helloworld = new SpaceShip("USS HelloWorld", 20, 5, 0.7);
-console.log(helloworld); //comment out
+// console.log(helloworld); //comment out
 
 const alienS = new SpaceShip("Minion", 0, 0, 0);
 
