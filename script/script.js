@@ -167,7 +167,8 @@ attackBtnEl.addEventListener("click", playerMove);
 leaveEl.addEventListener("click", leave);
 choiceBtnEl.onclick = () => {
   choiceMenuEl.style.display = "flex";
-  let text = ` ${(6 - aliensCounter) * 20}% to win.`;
+  let text = `Retreat. ${(6 - aliensCounter) * 20}% to win.`;
+  leaveEl.textContent = "";
   let newText = document.createTextNode(text);
   leaveEl.appendChild(newText);
 };
