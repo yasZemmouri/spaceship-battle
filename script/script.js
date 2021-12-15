@@ -163,6 +163,12 @@ alienSReset();
 
 //Event Listener
 attackBtnEl.addEventListener("click", playerMove);
+
+attackBtnEl.addEventListener("mousedown", function () {
+  // var audio = new Audio();
+  // audio.src = "sound/final-fantasy-viii-sound-effects-cursor-move.mp3";
+  // audio.play();
+});
 leaveEl.addEventListener("click", leave);
 choiceBtnEl.onclick = () => {
   choiceMenuEl.style.display = "flex";

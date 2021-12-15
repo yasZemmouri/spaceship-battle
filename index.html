@@ -13,8 +13,21 @@
     <link rel="icon" type="image/png" href="images/fav1.png" sizes="16x16" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Space Ship Battle</title>
+
+    <!-- <script type="text/javascript" language="javascript">
+      alert("funinit");
+      alert("funRender");
+    </script> -->
   </head>
   <body>
+    <audio
+      id="btnClick"
+      src="sound/final-fantasy-viii-sound-effects-cursor-move.mp3"
+      preload="auto"
+    ></audio>
+    <script>
+      let audio = document.getElementById("btnClick");
+    </script>
     <div class="screen">
       <header></header>
       <main>
@@ -71,7 +84,7 @@
             <dt>Name</dt>
             <dd id="pName"></dd>
           </dl>
-          <button id="attackBtn">Attack</button>
+          <button id="attackBtn" onmousedown="audio.play()">Attack</button>
           <button id="choiceBtn" type="button"></button>
           <div id="choiceMenu">
             <button id="leave">Retreat.</button>

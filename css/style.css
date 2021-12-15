@@ -3,6 +3,7 @@
   box-sizing: border-box;
   /* padding: 0; */
   user-select: none;
+  cursor: url(../images/FF7Cursor.png) 30 10, pointer;
 }
 html {
   font-size: 62.5%;
@@ -12,6 +13,7 @@ body {
   color: white;
   font-size: 1.5em;
   font-family: "Press Start 2P", cursive;
+  /* cursor: url(../images/FF7Cursor.png) 30 10, pointer; */
 }
 
 .screen {
@@ -25,6 +27,7 @@ body {
 header {
   flex: 1.1;
   background-color: blue;
+  background-image: linear-gradient(blue, #000049);
   border: 2px solid white;
   border-radius: 10px;
   width: 70%;
@@ -117,6 +120,7 @@ main {
     bottom: 100%;
   }
 }
+/*========= FOOTER ============*/
 footer {
   flex: 2;
   width: 100%;
@@ -125,6 +129,7 @@ footer {
 }
 footer div {
   background-color: blue;
+  background-image: linear-gradient(blue, #000049);
   border: 2px solid white;
   border-radius: 10px;
   padding: 15px;
@@ -151,7 +156,7 @@ footer div:last-child {
   vertical-align: top;
   margin-left: 25px;
   border-radius: 4px;
-  cursor: pointer;
+  cursor: url(../images/FF7Cursor.png) 30 10, pointer;
   font-weight: bold;
   padding: 5px;
 }
@@ -168,7 +173,10 @@ footer div:last-child {
   position: relative;
   visibility: hidden;
   vertical-align: top;
-  cursor: pointer;
+  cursor: url(../images/FF7Cursor.png) 40 10, pointer;
+}
+#choiceBtn:hover {
+  background-color: rgb(163, 80, 2);
 }
 #dashRight {
   position: relative;
@@ -178,8 +186,10 @@ footer div:last-child {
   width: 300px;
   height: 80px;
   top: -20px;
-  right: -160px;
-  background-color: rgba(0, 0, 255, 0.9);
+  right: -80px;
+  background-color: rgba(0, 0, 255);
+  background-image: linear-gradient(blue, #000049);
+  opacity: 0.8;
   color: white;
   /* padding: 0; */
   border: 2px solid white;
@@ -198,7 +208,7 @@ footer div:last-child {
   background-color: transparent;
   line-height: 1;
   margin: 3px;
-  cursor: pointer;
+  cursor: url(../images/FF7Cursor.png) 40 10, pointer;
 }
 #choiceMenu button:hover {
   color: grey;
@@ -252,6 +262,7 @@ footer div:last-child {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   width: 100%;
   height: 100%;
 }
@@ -259,5 +270,6 @@ footer div:last-child {
   list-style: none;
   padding: 1.5em;
   font-size: 4em;
-  text-shadow: 3px 2px 10px rgba(255, 217, 0, 0.9);
+  text-shadow: 1px 1px 2px rgba(255, 0, 0, 0.3),
+    3px 2px 12px rgba(255, 217, 0, 0.9);
 }
