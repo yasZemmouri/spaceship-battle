@@ -92,10 +92,10 @@ const checkWin = function () {
     turn = 0;
     console.log("You win");
     headerEl.textContent = "Well played. All aliens Terminated.";
-    lastMessageEl.textContent = `${player} The Terminator.`;
+    lastMessageEl.textContent = `${player} The Terminator`;
     setTimeout(function () {
       youWinEl.style.display = "block";
-    }, 2000);
+    }, 2500);
 
     return true;
   }
