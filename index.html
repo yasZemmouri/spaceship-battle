@@ -13,11 +13,6 @@
     <link rel="icon" type="image/png" href="images/fav1.png" sizes="16x16" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Space Ship Battle</title>
-
-    <!-- <script type="text/javascript" language="javascript">
-      alert("funinit");
-      alert("funRender");
-    </script> -->
   </head>
   <body>
     <audio
@@ -71,15 +66,15 @@
         </div>
         <div class="bullet-track">
           <div id="bullet" class="bullet-initial"></div>
-          <div id="abullet"></div>
         </div>
         <div class="hero-block">
           <img src="images/x-wing3.png" height="100px" alt="" />
         </div>
       </main>
 
+      <!-- =============== Footer  ==============-->
       <footer>
-        <div id="dashRight">
+        <div id="dashLeft">
           <dl>
             <dt>Name</dt>
             <dd id="pName"></dd>
@@ -87,11 +82,11 @@
           <button id="attackBtn" onmousedown="audio.play()">Attack</button>
           <button id="choiceBtn" type="button"></button>
           <div id="choiceMenu">
-            <button id="leave">Retreat.</button>
+            <button id="retreat">Retreat.</button>
             <button id="stay">Continue. You may DIE</button>
           </div>
         </div>
-        <div>
+        <div id="#dashRight">
           <dl>
             <dt>Hull</dt>
             <dd id="pHull"></dd>
@@ -104,6 +99,30 @@
             <dt>Accuracy</dt>
             <dd id="pAccuracy"></dd>
           </dl>
+          <dt><button id="helpBtn">HELP</button></dt>
+          <dl id="helpMsg" class="hide">
+            <ul>
+              <li>This is a turn-based game.</li>
+              <li>Use your mouse to navigate the screen.</li>
+              <li>
+                <img src="images/attackBtn.jpg" alt="" /> Click AYattack to
+                start your offonsive and to attack every time it's your turn.
+              </li>
+              <li>
+                <img src="images/menuBtn.jpg" alt="" />Every time you terminate
+                an alien this button will show up giving you the option to
+                continue or to retreat. If you continue the game goes on. If you
+                retreat The game end and you get a chance to win based on the
+                number of alien you killed. You're chance goes up by 20% for
+                every kill.
+              </li>
+              <li>
+                You win if You terminate all aliens or if your retreat is
+                successful.
+              </li>
+              <li>You lose when your Hull points reach 0</li>
+            </ul>
+          </dl>
         </div>
       </footer>
       <div id="gameOver" class="old">
@@ -113,10 +132,11 @@
       <div id="youWin">
         <ul>
           <li>Congratulations</li>
+          <li id="lastMessage"></li>
           <li>You Saved The Galaxy</li>
         </ul>
       </div>
     </div>
-    <script src="script/script.js"></script>
+    <script src="script/app.js"></script>
   </body>
 </html>
